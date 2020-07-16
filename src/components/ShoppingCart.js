@@ -16,9 +16,11 @@ const ShoppingCart = props => {
 
 	return (
 		<div className="shopping-cart">
-			{cart.map(item => (
-				<Item key={item.id} {...item} />
-			))}
+			{cart.map(item => {
+				const key = `${item.id + Math.random(7)}`
+				return <Item key={key} {...item} />
+			}			
+			)}
 
 			<div className="shopping-cart__checkout">
 				<p>Total: ${getCartTotal()}</p>
