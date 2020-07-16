@@ -114,7 +114,7 @@ const { products, addItem } = useContext(ProductContext);
 - Now our `Products` component is getting it's data solely from `Context API` 😃.
 
 **STEP 5 - Create the CartContext**
-[]
+[X]
 - Now that we have refactored our `Products` component to utilize `Context API` let's refactor our `Cart` and `Navigation` Component to use `Context API` as well.
 
 - To start create a new file in our contexts folder named `CartContext.js`, this context is going to be utilized by our `ShoppingCart` and `Navigation` component.
@@ -122,7 +122,7 @@ const { products, addItem } = useContext(ProductContext);
 - Inside of our new `CartContext` import `createContext` and create a new context named `CartContext`.
 
 **STEP 6 - Providing data with CartContext**
-[]
+[X]
 - Let's go ahead and bring our newly created `CartContext` into our `App.js` and wrap all of our components inside of our `CartContext.Provider`. Make sure our `ProductContext.Provider` is still the root provider.
 
 - Now pass a value prop to our `CartContext.Provider`, this value prop is going to contain our `cart` state.
@@ -134,7 +134,7 @@ const { products, addItem } = useContext(ProductContext);
 - While were at it let's go ahead and remove the props from our navigation as well.
 
 **STEP 7 - The final stretch**
-[]
+[X]
 - Our cart data is now being provided to us from our `CartContext` time to consume it!
 
 - First, let's head to our `ShoppingCart` component and import the `useContext` hook and our `CartContext`.
@@ -157,7 +157,7 @@ const { products, addItem } = useContext(ProductContext);
 We have now successfully converted our application into using `Context API` 🔥
 
 ## _MVP Requirements:_
-[]
+[X]
 - Create a `ProductContext` and a `CartContext`
 - Use the Provider Component from `ProductContext` and `CartContext` to provide data to child components
 - Consume data using the `useContext` hook from `ProductContext` and `CartContext`
